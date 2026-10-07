@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <h1>Hello, I'm <span>Savitha</span></h1>
+
+        <h2>AI & Data Science Student</h2>
+
+        <p>
+            Welcome to my personal portfolio website.
+        </p>
+
+        <a href="#projects" class="btn">
+            View My Projects
+        </a>
+
+    </section>
+
+
+    <!-- About Me Section -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am an Artificial Intelligence and Data Science student
+            interested in web development, machine learning,
+            deep learning and data science.
+        </p>
+
+        <p>
+            I enjoy creating useful applications and learning
+            new technologies.
+        </p>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Web Page Structure</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Web Page Styling</p>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Interactive Web Pages</p>
+            </div>
+
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Programming & Data Science</p>
+            </div>
+
+            <div class="skill">
+                <h3>Machine Learning</h3>
+                <p>ML Model Development</p>
+            </div>
+
+            <div class="skill">
+                <h3>React</h3>
+                <p>Frontend Development</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <h3>Weather Dashboard</h3>
+
+                <p>
+                    A weather application that uses a public
+                    weather API to display current weather
+                    information for different cities.
+                </p>
+
+                <button onclick="showProject('Weather Dashboard')">
+                    View Project
+                </button>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Smart Traffic Congestion Prediction</h3>
+
+                <p>
+                    A deep learning project that predicts
+                    traffic congestion using historical
+                    traffic data.
+                </p>
+
+                <button onclick="showProject('Smart Traffic Congestion Prediction')">
+                    View Project
+                </button>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Fake News Detection</h3>
+
+                <p>
+                    A machine learning project that classifies
+                    news articles as real or fake using NLP.
+                </p>
+
+                <button onclick="showProject('Fake News Detection')">
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="5"
+                required>
+            </textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+        <p id="formMessage"></p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Savitha. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
